@@ -40,4 +40,4 @@ onFirstView()	-- invoke first tab button's onPress event manually
 
 
 
--- hey yo wuht up my dudee
+-- Howdy bröther
