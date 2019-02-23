@@ -22,21 +22,26 @@ function scene:create( event )
 	-- create some text
 	local title = display.newText( "First View", display.contentCenterX, 125, native.systemFont, 32 )
 	title:setFillColor( 0 )	-- black
+
+	local lblEmail = display.newText("Email:", 75, 160, native.systemFont,25)
+	local txtEmail = native.newTextField(195,160,95,32)
 	
-	local newTextParams = { text = "Loaded by the first tab's\n\"onPress\" listener\nspecified in the 'tabButtons' table", 
-						x = display.contentCenterX + 10, 
-						y = title.y + 215, 
-						width = 310, height = 310, 
-						font = native.systemFont, fontSize = 14, 
-						align = "center" }
-	local summary = display.newText( newTextParams )
-	summary:setFillColor( 0 ) -- black
+	--local newTextParams = { text = "Loaded by the first tab's\n\"onPress\" listener\nspecified in the 'tabButtons' table", 
+	--					x = display.contentCenterX + 10, 
+	--					y = title.y + 215, 
+	--					width = 310, height = 310, 
+	--					font = native.systemFont, fontSize = 14, 
+	--					align = "center" }
+	--local summary = display.newText( newTextParams )
+	--summary:setFillColor( 0 ) -- black
 
 	
 	-- all objects must be added to group (e.g. self.view)
 	sceneGroup:insert( background )
 	sceneGroup:insert( title )
-	sceneGroup:insert( summary )
+	sceneGroup:insert( lblEmail )
+	sceneGroup:insert( txtEmail )
+	--sceneGroup:insert( summary )
 end
 
 function scene:show( event )

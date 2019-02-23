@@ -22,7 +22,7 @@ local function onSecondView( event )
 end
 
 
--- create a tabBar widget with two buttons at the bottom of the screen
+
 
 -- table to setup buttons
 local tabButtons = {
@@ -30,14 +30,11 @@ local tabButtons = {
 	{ label="Second", defaultFile="button2.png", overFile="button2-down.png", width = 32, height = 32, onPress=onSecondView },
 }
 
--- create the actual tabBar widget
+-- create a tabBar widget with two buttons at the bottom of the screen
+
 local tabBar = widget.newTabBar{
 	top = display.contentHeight - 50,	-- 50 is default height for tabBar widget
 	buttons = tabButtons
 }
 
 onFirstView()	-- invoke first tab button's onPress event manually
-
-
-
--- Howdy bröther
