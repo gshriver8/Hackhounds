@@ -4,4 +4,8 @@
 --
 -----------------------------------------------------------------------------------------
 
--- Your code here
+loggedIn = false
+
+local widget = require("widget")
+
+local mysql = require("luasql.mysql")
